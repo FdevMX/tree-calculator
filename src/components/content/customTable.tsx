@@ -1,7 +1,16 @@
 import React from 'react';
 import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from '@/components/ui/table';
 
-const CustomTable = ({ tokens }) => {
+interface Token {
+  lexeme: string;
+  token: string;
+}
+
+interface CustomTableProps {
+  tokens: Token[];
+}
+
+const CustomTable: React.FC<CustomTableProps> = ({ tokens }) => {
   return (
     <div className="bg-gray-800 p-8 rounded-[40px] shadow-2xl border-8 border-gray-700 overflow-auto custom-scrollbar" style={{ maxHeight: '750px', width: '380px' }}>
         <Table>
@@ -22,7 +31,7 @@ const CustomTable = ({ tokens }) => {
         </Table>
 
         {/* Scrollbar custom styles */}
-        <style jsx global>{`
+        <style>{`
             .custom-scrollbar {
             scrollbar-width: thin;
             scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
