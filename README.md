@@ -89,13 +89,13 @@ export default nextConfig;
 
 ## Código de Prueba
 
-Puedes usar el siguiente código para probar el analizador:
+Puedes usar el siguiente código para probar la calculadora:
 
 ```bash
 12+5-42*(4-2)/2
 ```
 
-Debera una tabla con las columnas `token` y `Tipo`:
+Deberia mostrarle una tabla con las columnas `token` y `Tipo`:
 
 ## Capturas de Pantalla
 
