@@ -106,7 +106,7 @@ const TreeDiagram = ({ expression }) => {
         // root.descendants().forEach(d => d.y = 400 - d.y);
 
         // Animación de las líneas (aristas)
-        const lines = g.selectAll('line')
+        g.selectAll('line')
             .data(root.links())
             .enter()
             .append('line')
@@ -122,7 +122,7 @@ const TreeDiagram = ({ expression }) => {
             .attr('y2', d => d.target.y + 50);
 
         // Animación de los nodos (círculos)
-        const circles = g.selectAll('circle')
+        g.selectAll('circle')
             .data(root.descendants())
             .enter()
             .append('circle')
