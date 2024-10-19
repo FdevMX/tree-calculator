@@ -24,7 +24,7 @@ const TreeDialog: React.FC<TreeDialogProps> = ({ currentExpression }) => {
             <p className="text-white mt-2">
               Operación: {currentExpression.split('').join(' ')}
             </p>
-            <p className='text-gray-500'>Lea el árbol de abajo hacia arriba</p>
+            <p className='text-gray-500'>Lea el árbol de abajo hacia arriba y de izquierda a derecha</p>
           </DialogHeader>
           <div className="p-4 overflow-auto flex-grow">
             <TreeDiagram expression={currentExpression} />
