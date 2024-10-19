@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@beautiful-tree/react": "^0.2.1",
     "@radix-ui/react-dialog": "^1.1.2",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
@@ -20,6 +21,7 @@
     "react-d3-tree": "^3.6.2",
     "react-dom": "^18",
     "react-flow-renderer": "^10.3.17",
+    "react-treebeard": "^3.2.4",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
